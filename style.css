@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    /*root variable*/
+
+    --bg-primary-color: #0c0c0c;
+    --bg-fill-color: #b4f5a1;
+    --text-primary-color: #ffffff;
+    --bg-food-color: red;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* spacing variables in info */
+    --space-sx: 4px;
+    --space-sm: 8px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-xl: 32px;
+    --space-2xl: 40px;
+    --space-3xl: 48px;
+
+    /* Border colors */
+    --border-primary-color: #333333;
+
+    /* border radious */
+    --border-radious-xs: 4px;
+    --border-radious-sm: 8px;
+    --border-radious-md: 12px;
+    --border-radious-lg: 16px;
+    --border-radious-xl: 20px;
+    --border-radious-2xl: 24px;
+}
+
+html {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+}
+
+main,
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--space-lg);
+}
+
+.btn{
+    padding: var(--space-sm);
+    border: none;
+    border-radius: var(--border-radious-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(153, 248, 216, 0.927);
+    border-color: var(--border-primary-color);
+    width: 8rem;
+}
+
+.btn:hover{
+    transform:scale(1.1) ;
+    background-color:rgb(16, 182, 126) ;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gamename{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    padding: var(--space-sm) var(--space-sm);
+    border: 1Px solid var(--border-primary-color);
+    border-radius: var(--border-radious-sm);
+}
+
+.board{
+    border: 1px solid var(--border-primary-color);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(50px,1fr));
+    border-radius: 2%
+
+}
+#headimage{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.block{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-primary-color);
+    border-radius:30% ;
+    background-color: rgb(74, 65, 65);
+}
+
+.fill{
+    background-color: var(--bg-fill-color);
+}
+
+.food{
+    background-image: url("./apple_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-food-color);
+}
+
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(64, 64, 64, 0.783);
+    backdrop-filter:blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game,.game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+
+}
+
+.game-over{
+    display: none;
+}
