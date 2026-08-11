@@ -1,6 +1,6 @@
 # 🐍 Snake Game — JavaScript
 
-A simple and interactive **Snake Game** built using **HTML, CSS, and Vanilla JavaScript**.
+A simple and interactive **Snake Game** built using **HTML, CSS, and Vanilla JavaScript**. 
 The project demonstrates DOM manipulation, keyboard event handling, game loops, collision detection, and dynamic rendering.
 
 ## 🎮 Features
@@ -76,6 +76,8 @@ This project was created to practice and understand:
 * Dynamic CSS Classes
 * Game Loop Logic
 * Basic Game State Management
+
+Credit goes to Sheriyansh coding school)
 
 ## 🔮 Future Improvements
 
