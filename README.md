@@ -94,10 +94,14 @@ Some features that can be added in future versions:
 
 ## 📸 Preview
 
-Add a screenshot or GIF of the game here:
+<img width="1536" height="784" alt="image" src="https://github.com/user-attachments/assets/93f8ff4b-48ad-464d-8db3-0a476ab55d08" />
+
+<img width="1536" height="785" alt="image" src="https://github.com/user-attachments/assets/f20bcb03-17c7-44c3-ae6b-f7f3536516e7" />
+
+
 
 ```text
-![Snake Game Preview](./preview.png)
+![Snake Game Preview]
 ```
 
 ## 👨‍💻 Author
